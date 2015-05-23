@@ -10,8 +10,7 @@
             <button type="button" class="btn btn-default btn-circle btn-xl urgent">Urgent</button>
         </div>
     </div>
-<br/>
-<br/>
+
     <div class="row">
         <div class="col-md-6 action">
             <button type="button" class="btn btn-default btn-circle btn-xl notify">Notify</button>

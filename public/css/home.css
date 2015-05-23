@@ -69,14 +69,17 @@
     text-align:center;
 }
 
-.urgent{
+.urgent,
+.urgent:hover{
     color:red;
 }
 
-.notify{
+.notify,
+.notify:hover{
     color:green;
 }
 
-.info{
+.info,
+.info:hover{
     color:blue;
 }
