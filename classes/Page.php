@@ -1,7 +1,7 @@
 <?php
 
 include_once 'Navbar.php';
-include_once '..\vars.php';
+include_once '../vars.php';
 
 class Page extends Navbar{
     // required user level to access the page

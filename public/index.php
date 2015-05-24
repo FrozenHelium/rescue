@@ -1,6 +1,6 @@
 <?php
 
-require_once "..\pages.php";
+require_once "../pages.php";
 
 $pageID = 'homepage';
 if(isset($_GET['page'])){
