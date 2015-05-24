@@ -7,7 +7,7 @@ require_once 'Database.php';
 // @TODO: move these definitions to vars.php
 define("HOST", "localhost");
 define("USER", "root");
-define("PASSWORD", "");
+define("PASSWORD", "root");
 define("DATABASE", "rescue-db");
 define("SECURE", false);	// make true to enable https
 
@@ -37,6 +37,10 @@ class User {
 
     public function GetDB(){
         return $this->db;
+    }
+
+    public function GetUserType(){
+        return $this->userType;
     }
 
 	public function StartSession() {
@@ -159,11 +163,12 @@ class User {
 
     function AddUser($username, $password, $usertype)
 	{
+        /*
         if($this->LoggedIn() == false && $this->GetUserType() != 3)
         {
             throw new PermissionDeniedException;
         }
-
+        // */
 		$mysqli = $this->db;
 		if (strlen($password) != 128) {
 			 throw new Exception('Invalid password configuration');
