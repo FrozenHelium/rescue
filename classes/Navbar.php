@@ -47,7 +47,7 @@ class Navbar{
             echo '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">';
             echo $firstname.'<span class="caret"></span></a>';
             echo '<ul class="dropdown-menu" role="menu">';
-            echo '<li><a href="logout.php">Logout</a></li>';
+            echo '<li><a href="../logout.php">Logout</a></li>';
             echo '</ul> </li>';
         }
 

@@ -15,15 +15,19 @@ $g_urgentPage = null;
 $g_notifyPage = null;
 $g_infoPage = null;
 
-if(($GLOBALS['g_pageID'] == 'official' || $GLOBALS['g_pageID'] == 'admin') && $g_user->LoggedIn()){
+if(($GLOBALS['g_pageID'] == 'official' || $GLOBALS['g_pageID'] == 'admin' ) && $g_user->LoggedIn()){
     $userType = $g_user->GetUserType();
     if($userType == 2){
         $g_adminPage = new Page;
+        $g_adminPage->SetUser($g_user);
         $g_adminPage->AddStyleSheet("css/admin.css");
         $g_adminPage->SetView("../views/admin_view.php");
         $g_adminPage->SetController("../controls/admin_control.php");
+        $g_adminPage->AddTab("Reports", "index.php?page=admin&tab=reports");
+        $g_adminPage->AddTab("Manage Officials", "index.php?page=admin&tab=manageofficials");
     }else if($userType == 1){
         $g_officialPage = new Page;
+        $g_officialPage->SetUser($g_user);
         $g_officialPage->AddStyleSheet("css/official.css");
         $g_officialPage->SetView("../views/official_view.php");
         $g_officialPage->SetController("../controls/official_control.php");
