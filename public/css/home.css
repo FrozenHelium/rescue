@@ -63,18 +63,40 @@
     text-align:center;
 }
 
-.urgent,
+.urgent{
+	background-color: red;
+	color: white;
+}
+
+.notify{
+    background-color:green;
+    color: white;
+}
+
+.info{
+    background-color:blue;
+    color: white;
+}
+
 .urgent:hover{
-    color:red;
-
+	color: white;
+	background-color:red;
+	font-weight: bolder;
+	border-color: red;
+	font-size: 32px;
 }
 
-.notify,
 .notify:hover{
-    color:green;
+	color: white;
+	background-color:green;
+	border-color: green;
+	font-weight: bolder;
+	font-size: 32px;
 }
-
-.info,
 .info:hover{
-    color:blue;
+	color: white;
+	background-color:blue;
+	border-color: blue;
+	font-weight: bolder;
+	font-size: 32px;
 }

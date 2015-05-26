@@ -6,7 +6,7 @@
                 <p>Welcome to <strong>Rescue</strong>. A website where you can report your suspicion on Human Trafficking.</p>
             </div>
             <div class="col-md-1">
-                <a href="index.php?page=login">Log In</a>
+                <a href="index.php?page=login"><button class="btn btn-default">Log In</button></a>
             </div>
         </div>
      </div>
@@ -24,7 +24,7 @@
             <a class="btn btn-default btn-circle btn-xl notify" href="index.php?page=notify">Notify</a>
         </div>
         <div class="col-md-6 action">
-            <a class="btn btn-default btn-circle btn-xl info" href="index.php?page=info">Information</a>
+            <a class="btn btn-default btn-circle btn-xl info" href="index.php?page=info">Info</a>
         </div>
     </div>
 
