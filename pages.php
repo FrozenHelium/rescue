@@ -11,8 +11,11 @@ $g_loginPage = null;
 $g_adminPage = null;
 $g_officialPage = null;
 $g_forbiddenPage = null;
+$g_urgentPage = null;
+$g_notifyPage = null;
+$g_infoPage = null;
 
-if($g_user->LoggedIn()){
+if(($GLOBALS['g_pageID'] == 'official' || $GLOBALS['g_pageID'] == 'admin') && $g_user->LoggedIn()){
     $userType = $g_user->GetUserType();
     if($userType == 2){
         $g_adminPage = new Page;
@@ -35,6 +38,27 @@ if($g_user->LoggedIn()){
         $g_homePage->SetView("../views/home_view.php");
         $g_homePage->SetController("../controls/home_control.php");
         $g_homePage->DisableNavbar();
+    }else if($GLOBALS['g_pageID'] == 'urgent'){
+        $g_urgentPage = new Page;
+        $g_urgentPage->AddStyleSheet("css/urgent.css");
+        $g_urgentPage->SetView("../views/urgent_view.php");
+        $g_urgentPage->SetController("../controls/urgent_control.php");
+        $g_urgentPage->DisableNavbar();
+
+    }else if($GLOBALS['g_pageID'] == 'notify'){
+        $g_notifyPage = new Page;
+        $g_notifyPage->AddStyleSheet("cssnotifye.css");
+        $g_notifyPage->SetView("../views/notify_view.php");
+        $g_notifyPage->SetController("../controls/notify_control.php");
+        $g_notifyPage->DisableNavbar();
+
+    }else if($GLOBALS['g_pageID'] == 'info'){
+        $g_infoPage = new Page;
+        $g_infoPage->AddStyleSheet("css/info.css");
+        $g_infoPage->SetView("../views/info_view.php");
+        $g_infoPage->SetController("../controls/info_control.php");
+        $g_infoPage->DisableNavbar();
+
     }else{
         $g_loginPage = new Page;
         $g_loginPage->AddStyleSheet("css/login.css");
