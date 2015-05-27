@@ -1,5 +1,4 @@
 <?php
-
 $g_pageID = 'home';
 if(isset($_GET['page'])){
     $g_pageID = $_GET['page'];
