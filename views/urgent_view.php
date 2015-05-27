@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-md-11">
                 <h1>Rescue</h1>
+                <p><strong>Urgent:</strong> Report your suspicion that requires immediate attention</p>
             </div>
             <div class="col-md-1">
                 <a href="index.php?page=home">Home</a>

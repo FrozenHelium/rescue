@@ -61,7 +61,11 @@ if(($GLOBALS['g_pageID'] == 'official' || $GLOBALS['g_pageID'] == 'admin' ) && $
         $g_infoPage->AddStyleSheet("css/info.css");
         $g_infoPage->SetView("../views/info_view.php");
         $g_infoPage->SetController("../controls/info_control.php");
-        $g_infoPage->DisableNavbar();
+        $g_infoPage->AddTab("Organizations", "index.php?page=info&tab=organizations");
+        $g_infoPage->AddTab("Awareness", "index.php?page=info&tab=awareness");
+        $g_infoPage->AddTab("Statistics", "index.php?page=info&tab=statistics");
+        $g_infoPage->AddTab("What can you do?", "index.php?page=info&tab=whatcanyoudo");
+
 
     }else{
         $g_loginPage = new Page;
