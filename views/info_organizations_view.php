@@ -130,7 +130,7 @@ Satighatta - Jhapa District Eastern Nepal</p>
         Fax: +977-1-4489978<br>
         e-mail: info@maitinepal.org, program@maitinepal.org<br>
       </p>
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-pills">
       <li><a href="http://www.maitinepal.org/">Official Website</a></li>
       <li><a href="http://en.wikipedia.org/wiki/Maiti_Nepal">Wiki Link</a></li>
       </ul>
