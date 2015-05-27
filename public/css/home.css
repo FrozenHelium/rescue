@@ -32,7 +32,6 @@
   }
 }
 
-
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -41,6 +40,9 @@
   font-size: 12px;
   line-height: 1.428571429;
   border-radius: 15px;
+
+  -webkit-transition:background-color 0.6s, -webkit-transform 0.6s;
+    transition:background-color 0.6s, transform 0.6s;
 }
 .btn-circle.btn-lg {
   width: 50px;
@@ -57,46 +59,41 @@
   font-size: 24px;
   line-height: 1.33;
   border-radius: 80px;
-  padding-top:68px;
+  padding-top:63px;
+
 }
 .action{
     text-align:center;
 }
 
 .urgent{
-	background-color: red;
+	background-color: #DD4444;
 	color: white;
 }
 
 .notify{
-    background-color:green;
+    background-color:#44BB44;
     color: white;
 }
 
 .info{
-    background-color:blue;
+    background-color:#4444BB;
     color: white;
 }
 
 .urgent:hover{
 	color: white;
 	background-color:red;
-	font-weight: bolder;
-	border-color: red;
-	font-size: 32px;
+    border-color:red;
 }
 
 .notify:hover{
 	color: white;
-	background-color:green;
-	border-color: green;
-	font-weight: bolder;
-	font-size: 32px;
+	background-color:#44EE44;
+	border-color:#44EE44;
 }
 .info:hover{
 	color: white;
 	background-color:blue;
 	border-color: blue;
-	font-weight: bolder;
-	font-size: 32px;
 }
