@@ -65,8 +65,6 @@ if(($GLOBALS['g_pageID'] == 'official' || $GLOBALS['g_pageID'] == 'admin' ) && $
         $g_infoPage->AddTab("Awareness", "index.php?page=info&tab=awareness");
         $g_infoPage->AddTab("Statistics", "index.php?page=info&tab=statistics");
         $g_infoPage->AddTab("What can you do?", "index.php?page=info&tab=whatcanyoudo");
-
-
     }else{
         $g_loginPage = new Page;
         $g_loginPage->AddStyleSheet("css/login.css");
