@@ -65,6 +65,24 @@ class User {
 		return $this->username;
 	}
 
+    public function GetOfficals(){
+
+    }
+    public function AddReport($location, $category, $description, $anonymous, $name, $contact, $urgent){
+        if($insert_stmt = $this->db->prepare("INSERT INTO reports (location, category, description, anonymous, name, contact, urgent) VALUES (?, ?, ?, ?, ?, ?, ?)")){
+            $insert_stmt->bind_param('sssissi', $location, $category, $description, $anonymous, $name, $contact, $urgent);
+            if(!$insert_stmt->execute()){
+                die('Failed to add the report');
+            }
+        }
+    }
+    public function GetReports(){
+        if ($stmt = $this -> db -> prepare("SELECT * FROM reports WHERE time >= NOW() - INTERVAL 1 WEEK")) {
+            $stmt -> execute();
+            return $stmt->get_result();
+        }
+    }
+
     public function Login($username, $password) {
 		$mysqli = $this -> db;
 		if ($stmt = $mysqli -> prepare("SELECT id, password, salt, usertype FROM users WHERE username = ? LIMIT 1")) {

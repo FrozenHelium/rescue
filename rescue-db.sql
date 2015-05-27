@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2015 at 04:19 PM
+-- Generation Time: May 27, 2015 at 10:24 AM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.16
 
@@ -25,9 +25,31 @@ USE `rescue-db`;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `reports`
+--
+
+DROP TABLE IF EXISTS `reports`;
+CREATE TABLE IF NOT EXISTS `reports` (
+  `location` varchar(255) NOT NULL,
+  `category` varchar(63) NOT NULL,
+  `description` varchar(2047) NOT NULL,
+  `name` varchar(63) DEFAULT NULL,
+  `contact` varchar(63) DEFAULT NULL,
+  `anonymous` tinyint(1) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `status` int(4) NOT NULL DEFAULT '0',
+  `urgent` tinyint(1) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` tinytext NOT NULL,

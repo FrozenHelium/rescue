@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-11">
                 <h1>Rescue</h1>
-                <p><strong>Urgent:</strong> Report your suspicion which require immediate attention</p>
+                <p><strong>Urgent:</strong> Report your suspicion that require immediate attention</p>
             </div>
             <div class="col-md-1">
                 <a href="index.php?page=home">Home</a>
@@ -12,8 +12,25 @@
      </div>
 </div>
 
+
 <div class="container">
-    <form class="form-urgent" action="index.php?page=urgent" method="post" name="urgent_form" role="form">
+    <?php
+        if(isset($formSubmissionSuccess)){
+            if($formSubmissionSuccess == false){
+                echo '<div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Error! </strong>'.$formSubmissionMsg.'
+                </div>';
+            }else{
+                echo '<div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Successful! </strong>'.$formSubmissionMsg.'
+                    </div>';
+            }
+        }
+    ?>
+
+    <form class="form-urgent" action="index.php?page=urgent" method="post" name="urgent-form" role="form">
         <div class="row">
             <div class="col-md-6">
                 <input type="text" class="form-control" placeholder="Location" name="location" id="location" required/>
@@ -24,10 +41,12 @@
         </div>
         <div class="row">
             <div class = "col-md-6">
-                <select class="form-control" placeholder="Select the type of suspicion" name="type" id ="type" required>
-                    <option value="1">Human Trafficking</option>
-                    <option value="2">Child Labour</option>
-                    <option value="3">Kidnapping</option>
+                <select class="form-control" placeholder="Select the type of suspicion" name="category" id ="category" required>
+                    <option value="Human Trafficking">Human Trafficking</option>
+                    <option value="Child Labour">Child Labour</option>
+                    <option value="Bonded Labour">Bonded Labour</option>
+                    <option value="Kidnapping">Kidnapping</option>
+                    <option value="Other">Other</option>
                 </select>
             </div>
         </div>
@@ -35,7 +54,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p> Enter a breif description about your suspicion </p>
-                <textarea class="form-control" required></textarea>
+                <textarea class="form-control" name="description" id="description" required></textarea>
             </div>
         </div>
         <hr/>
@@ -48,9 +67,9 @@
                 <input type='text' class="form-control" placeholder="Contact (optional if submitted anonymously)" name='contact' id='contact'>
             </div>
         </div>
-        <div class="checkbox ">
+        <div class="checkbox">
           <label>
-            <input type="checkbox" value="anonymous"> Submit anonymously
+            <input type="checkbox" value="1" name="anonymous" id="anonymous"> Submit anonymously
           </label>
         </div>
         <div class="row">
