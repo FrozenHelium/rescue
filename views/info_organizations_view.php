@@ -134,10 +134,37 @@ Satighatta - Jhapa District Eastern Nepal</p>
       <li><a href="http://www.maitinepal.org/">Official Website</a></li>
       <li><a href="http://en.wikipedia.org/wiki/Maiti_Nepal">Wiki Link</a></li>
       </ul>
+      <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=Maiti%20Nepal%2C%20Kathmandu%2C%20Central%20Region%2C%20Nepal&key=AIzaSyBJb8f4AE4BBwHlDwqCn08rhpljQYGr0Xk"></iframe>
     </div>
     <div id="menu2" class="tab-pane fade">
       <h3>ABC Nepal</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <p>Agroforestry, Basic health and Cooperative Nepal (ABC Nepal) is a non profit non governmental organisation working in Nepal with a focus on human trafficking in Nepal and rights of women. It is one of the very first Non Governmental Organisation established in Nepal in 1987 before the establishment of multiparty democracy in Nepal in 1991 and officially registered then after.</p>
+      <p><strong>Contact Us</strong><br>
+        Koteshwor, Jadibuti, Kathmandu, Nepal<br>
+        PO Box:5135<br>
+        Tel: (+977) 1 6630346 
+             (+977) 1 6630072<br>
+        Email: abc@transit.wlink.com.np
+               abc.thome@gmail.com<br><br>
+
+        <strong>Regional Office: Biratnagar</strong><br>
+        Panchali Road <br>
+        Biratnagar 16, Morang<br>
+        Email: abcnepalbrt@gmail.com<br>
+        Tel: (+977) 21 472174<br><br>
+
+        <strong>Regional Office: Bhairhawa</strong><br>
+        Bank Colony<br>
+        Siddharthanagar, Rupandehi<br>
+        Tel: (+977) 71 527606<br>
+    </p>
+    <ul class="nav nav-pills">
+      <li><a href="http://abcnepal.org.np/">Official Website</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/ABC_Nepal">Wiki Link</a></li>
+    </ul>
+    <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=27%C2%B040'13.4%22N%2085%C2%B021'04.2%22E&key=AIzaSyBJb8f4AE4BBwHlDwqCn08rhpljQYGr0Xk"></iframe>
     </div>
     <div id="menu3" class="tab-pane fade">
       <h3>Change Nepal</h3>
