@@ -1,4 +1,14 @@
+body{
+    background-image:url("../imgs/home-bg.png");
+    background-repeat:none;
+    background-size:cover;
+}
 
+.jumbotron,
+.jumbotron a{
+    background-image:none;
+    background-color:transparent;
+}
 .main{
   text-align: left;
   background-color: transparent;
@@ -59,6 +69,7 @@
   font-size: 24px;
   line-height: 1.33;
   border-radius: 80px;
+  border-color:transparent;
   padding-top:63px;
 
 }
@@ -84,16 +95,13 @@
 .urgent:hover{
 	color: white;
 	background-color:red;
-    border-color:red;
 }
 
 .notify:hover{
 	color: white;
 	background-color:#44EE44;
-	border-color:#44EE44;
 }
 .info:hover{
 	color: white;
 	background-color:blue;
-	border-color: blue;
 }
