@@ -1,10 +1,9 @@
 <div>
 <h3> Awareness </h3>
 </div>
-<br> <br> <br>
-<br> <br> <br>
-<br> <br> <br>
-<div id="container">
+<div class ="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
 	<div align="center">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -51,3 +50,5 @@
 		</div>
 	</div>
 </div>
+</div>
+<div class="col-md-1"></div>
