@@ -11,7 +11,6 @@
         </div>
      </div>
 </div>
-
 <div class="container">
     <form class="form-urgent" action="index.php?page=urgent" method="post" name="urgent_form" role="form">
         <div class="row">
@@ -19,7 +18,28 @@
                 <input type="text" class="form-control" placeholder="Location" name="location" id="location" required/>
             </div>
             <div class="col-md-3">
-                <input type="button" class="btn btn-lg btn-primary btn-block" value="Select from Map"/>
+                <div class="map-modal">
+                    <!-- Button (to Trigger Modal) -->
+                   <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#myModal">Select from Mappy</button>      
+                    <!-- Modal HTML -->
+                    <div id="myModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Select Location</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure about this location?</p>
+                                    <iframe src="map_view.php" width="560px" height="400px"></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-lg btn-primary btn-block">Save changes</button>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
         <div class="row">
