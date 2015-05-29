@@ -61,12 +61,33 @@ class User {
 		$this->loggedIn = false;
 	}
 
+    public function AddOfficial($username, $password, $name, $organization, $designation, $location, $contact){
+        try{
+            $this->AddUserRaw($username, $password, 1);
+        }
+        catch(Exception $e){
+            return;
+        }
+        $id = $this->db->insert_id;
+        if($insert_stmt = $this->db->prepare("INSERT INTO officials (name, organization, designation, location, contact, userid) VALUES (?, ?, ?, ?, ?, ?)")){
+            $insert_stmt->bind_param('sssssi', $name, $organization, $designation, $location, $contact, $id);
+            $result = $insert_stmt->execute();
+            if(!$result){
+                die($insert_stmt->error);
+            }
+        }
+
+    }
+
 	public function GetUsername(){
 		return $this->username;
 	}
 
-    public function GetOfficals(){
-
+    public function GetOfficials(){
+        if ($stmt = $this -> db -> prepare("SELECT * FROM officials")) {
+            $stmt -> execute();
+            return $stmt->get_result();
+        }
     }
     public function AddReport($location, $category, $description, $anonymous, $name, $contact, $urgent){
         if($insert_stmt = $this->db->prepare("INSERT INTO reports (location, category, description, anonymous, name, contact, urgent) VALUES (?, ?, ?, ?, ?, ?, ?)")){
@@ -105,7 +126,7 @@ class User {
 						$_SESSION['username'] = $username;
 						$_SESSION['login_string'] = hash('sha512', $password . $user_browser);
 						$this->loggedIn = true;
-						$this->usernamez = $username;
+						$this->username = $username;
                         $stmt->free_result();
                         $stmt->close();
 

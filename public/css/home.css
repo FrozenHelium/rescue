@@ -71,8 +71,18 @@ body{
   border-radius: 80px;
   border-color:transparent;
   padding-top:63px;
-
 }
+
+.xlbtn{
+    height: 100%;
+    width: 100%;
+	background: #FFF;
+    border: 1px solid #1a1a1a;
+	border-radius: 50%;
+	padding: 5px;
+    box-sizing: border-box;
+}
+
 .action{
     text-align:center;
 }

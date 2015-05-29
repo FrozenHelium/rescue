@@ -6,3 +6,38 @@ body{
     font-size:24px;
     color:#cc2222;
 }
+
+.form-add-official {
+    max-width: 480px;
+    min-width: 240px;
+    padding: 19px 19px 19px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+               -moz-border-radius: 5px;
+                    border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+               -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+
+.form-add-official .form-add-official-heading,
+.form-add-official .checkbox {
+    margin-bottom: 10px;
+}
+.add-official-icon p,
+.add-official-icon h3{
+    text-align: center;
+}
+
+
+.form-add-official input[type="text"],
+.form-add-official input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 7px 9px;
+}

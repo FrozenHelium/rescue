@@ -13,7 +13,6 @@ if((isset($_POST['un']) && isset($_POST['psss'])) ){
         }else if($userType == 1){
             header("Location: index.php?page=official");
         }else{
-
         }
     }else{echo 'oops! something went wrong :/';}
 }else if($user->LoggedIn()){

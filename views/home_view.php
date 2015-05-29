@@ -21,7 +21,9 @@
 
     <div class="row">
         <div class="col-md-6 action">
-            <a class="btn btn-default btn-circle btn-xl notify" href="index.php?page=notify">Notify</a>
+
+                    <a class="btn btn-default btn-circle btn-xl notify" href="index.php?page=notify">Notify</a>
+            
         </div>
         <div class="col-md-6 action">
             <a class="btn btn-default btn-circle btn-xl info" href="index.php?page=info">Info</a>
