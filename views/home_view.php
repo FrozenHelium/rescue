@@ -2,14 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-11">
-                <div class="row">
-                    <div class="col-md-1">
-                        <img class="logo" src="imgs/logo.png"/>
-                    </div>
-                    <div class="col-md-3 page-title">
-                        <h1>escue</h1>
-                    </div>
-                </div>
+                <img class="typography" scr="../imgs/typography.png"/>
                 <p>Welcome to <strong>Rescue</strong>. A website where you can report your suspicion on Human Trafficking.</p>
             </div>
             <div class="col-md-1">

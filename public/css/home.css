@@ -3,6 +3,10 @@ body{
     background-repeat:none;
     background-size:cover;
 }
+.typography{
+    width:400px;
+    height:154px;
+}
 .jumbotron,
 .jumbotron a{
     background-image:none;
