@@ -15,18 +15,20 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 action">
-            <a class="btn btn-default btn-circle btn-xl urgent" href="index.php?page=urgent">Urgent</a>
+            <a class="btn btn-default btn-circle btn-xl urgent" href="index.php?page=urgent">URGENT</a>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-6 action">
-
-                    <a class="btn btn-default btn-circle btn-xl notify" href="index.php?page=notify">Notify</a>
-            
+            <div class="xlbtn xlbtnmain">
+                <div class="xlbtn">
+                    <a class="btn btn-default btn-circle btn-xl notify" href="index.php?page=notify">NOTIFY</a>
+                </div>
+            </div>
         </div>
         <div class="col-md-6 action">
-            <a class="btn btn-default btn-circle btn-xl info" href="index.php?page=info">Info</a>
+            <a class="btn btn-default btn-circle btn-xl info" href="index.php?page=info">INFO</a>
         </div>
     </div>
 

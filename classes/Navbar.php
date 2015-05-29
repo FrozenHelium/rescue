@@ -25,7 +25,7 @@ class Navbar{
         echo '<div class="container">';
         echo '<div class="navbar-header">';
 
-        echo '<a class="navbar-brand" href="#"><strong>'.$GLOBALS['g_appName'].'</strong></a>';
+        echo '<a class="navbar-brand" href="index.php?page=home"><strong>'.$GLOBALS['g_appName'].'</strong></a>';
         echo '</div>';
         echo '<div id="navbar" class="navbar-collapse collapse">';
         echo '<ul class="nav navbar-nav navbar-right">';
