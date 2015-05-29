@@ -46,6 +46,8 @@ class Page extends Navbar{
         echo '<!DOCTYPE HTML><html>';
         echo '<head>';
         echo '<title>' . $pageTitle . '</title>';
+        echo '<link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">';
+        echo '<link rel="icon" href="imgs/favicon.png" type="image/x-icon">';
         echo '<meta charset="utf-8">';
         echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">';
         echo '<meta name="viewport" content="width=device-width, initial-scale=1">';

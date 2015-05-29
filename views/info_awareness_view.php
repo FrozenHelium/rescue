@@ -26,17 +26,17 @@
 					</div>
 				</div>
 				<div class="item">
-					<img src="img2.jpg" alt="second">
+					<img src="../public/imgs/img1.png" alt="second">
 					<div class="carousel-caption">
 					</div>
 				</div>
 				<div class="item">
-					<img src="img3.jpg" alt="third">
+					<img src="../public/imgs/img1.png" alt="third">
 					<div class="carousel-caption">
 					</div>
 				</div>
 				<div class="item">
-					<img src="img4.jpg" alt="fourth">
+					<img src="../public/imgs/img1.png" alt="fourth">
 					<div class="carousel-caption">
 					</div>
 				</div>
