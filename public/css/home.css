@@ -3,12 +3,16 @@ body{
     background-repeat:none;
     background-size:cover;
 }
-
-
 .jumbotron,
 .jumbotron a{
     background-image:none;
     background-color:transparent;
+}
+.logo{
+    width:90px;
+    height:90px;
+    margin-left:4px;
+    margin-top:-7px;
 }
 .main{
   text-align: left;
