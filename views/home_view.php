@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-md-11">
                 <img class="logo" src="imgs/typography.png"/>
-                <p>Welcome to <strong>Rescue</strong>. A website where you can report your suspicion on Human Trafficking.</p>
             </div>
             <div class="col-md-1">
                 <a href="index.php?page=login">Log In</a>
