@@ -35,7 +35,7 @@
             <div class="col-md-3">
                 <div class="map-modal">
                     <!-- Button (to Trigger Modal) -->
-                   <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#myModal">Select from Mappy</button>
+                   <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#myModal">Locate on Map</button>
                     <!-- Modal HTML -->
                     <div id="myModal" class="modal fade">
                         <div class="modal-dialog">
