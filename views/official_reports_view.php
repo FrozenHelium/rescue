@@ -4,7 +4,7 @@
             $nReports = 0;
             while ($row = $reports->fetch_assoc()) {
                 ++$nReports;
-                echo '<a href="#" class="list-group-item '.($row['urgent']==1?'report-urgent':'report-normal').'">
+                echo '<a href="index.php?page=official&tab=reports&reportid='.$row['id'].'"class="list-group-item '.($row['urgent']==1?'report-urgent':'report-normal').'">
                         <div class="row">
                             <div class="col-md-9">
                                 <p class="list-group-item-title">'.$row['location'].'</p>

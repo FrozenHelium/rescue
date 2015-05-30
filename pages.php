@@ -31,6 +31,8 @@ if(($GLOBALS['g_pageID'] == 'official' || $GLOBALS['g_pageID'] == 'admin' ) && $
         $g_officialPage->AddStyleSheet("css/official.css");
         $g_officialPage->SetView("../views/official_view.php");
         $g_officialPage->SetController("../controls/official_control.php");
+        $g_officialPage->AddTab("Reports", "index.php?page=official&tab=reports");
+        $g_officialPage->AddTab("My cases", "index.php?page=official&tab=mycases");
 
     }else{
 
@@ -51,7 +53,7 @@ if(($GLOBALS['g_pageID'] == 'official' || $GLOBALS['g_pageID'] == 'admin' ) && $
 
     }else if($GLOBALS['g_pageID'] == 'notify'){
         $g_notifyPage = new Page;
-        $g_notifyPage->AddStyleSheet("cssnotifye.css");
+        $g_notifyPage->AddStyleSheet("css/notify.css");
         $g_notifyPage->SetView("../views/notify_view.php");
         $g_notifyPage->SetController("../controls/notify_control.php");
         $g_notifyPage->DisableNavbar();

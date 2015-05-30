@@ -6,3 +6,16 @@ body{
     font-size:24px;
     color:#cc2222;
 }
+
+
+.detail-location{
+    font-weight:bold;
+    font-size:20px;
+}
+
+.detail-description{
+    font-size:18px;
+    
+    padding: 5px;
+    margin-top:10px;
+}
