@@ -4,18 +4,13 @@ body{
 
 .list-group-item-title{
     font-size:24px;
+
+}
+
+.report-urgent p{
     color:#cc2222;
 }
 
-
-.detail-location{
-    font-weight:bold;
-    font-size:20px;
-}
-
-.detail-description{
-    font-size:18px;
-    
-    padding: 5px;
-    margin-top:10px;
+.report-normal{
+    color:#000;
 }
