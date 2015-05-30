@@ -4,8 +4,17 @@ body{
 
 .list-group-item-title{
     font-size:24px;
+
+}
+
+.report-urgent p{
     color:#cc2222;
 }
+
+.report-normal{
+    color:#000;
+}
+
 
 .form-add-official {
     max-width: 480px;
