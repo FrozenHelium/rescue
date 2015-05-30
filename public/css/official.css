@@ -14,3 +14,35 @@ body{
 .report-normal{
     color:#000;
 }
+
+
+.form-reportdetail {
+    max-width: 480px;
+    min-width: 240px;
+
+    background-color: #fff;
+
+}
+
+.detail-report-buttons{
+    margin-top:100px;
+}
+
+
+.form-reportdetail .form-reportdetail-heading,
+.form-reportdetail .checkbox {
+    margin-bottom: 10px;
+}
+.reportdetail-icon p,
+.reportdetail-icon h3{
+    text-align: center;
+}
+
+
+.form-reportdetail input[type="text"]{
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 7px 9px;
+}

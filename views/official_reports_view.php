@@ -1,5 +1,11 @@
 <div class="container">
     <?php
+       if(isset($handleMsg)){
+               echo '<div class="alert alert-info alert-dismissible" role="alert">
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <strong>Success! </strong>'.$handleMsg.'
+               </div>';
+       }
         if(isset($reports)){
             $nReports = 0;
             while ($row = $reports->fetch_assoc()) {

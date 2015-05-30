@@ -30,9 +30,4 @@
             <a class="btn btn-default btn-circle btn-xl info" href="index.php?page=info">INFO</a>
         </div>
     </div>
-
-    <footer class="footer">
-        <p class="text-muted">&copy; Copyright shit, C-Company 2015</p>
-    </footer>
-
 </div>

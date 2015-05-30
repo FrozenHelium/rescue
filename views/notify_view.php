@@ -97,7 +97,4 @@
             </div>
         </div>
     </form>
-    <footer class="footer">
-        <p class="text-muted">&copy; Copyright shit, C-Company 2015</p>
-    </footer>
 </div>

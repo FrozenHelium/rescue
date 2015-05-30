@@ -59,6 +59,13 @@ class Page extends Navbar{
         if($this->controllerSet) include $this->controllerURI;
         if($this->navbarEnabled) $this->GenerateNavbar();
         if($this->viewSet) include $this->viewURI;
+
+        echo '
+            <div class="container">
+                <footer class="footer">
+                    <p class="text-muted">Copyright &copy; 2015, 4 oh! 4, all right reserved </p>
+                </footer>
+            </div>';
         foreach($this->jsURIs as $jsURI){
             echo '<script language="javascript" type="text/javascript" src="' . $jsURI . '"></script>';
         }

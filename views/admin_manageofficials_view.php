@@ -23,7 +23,7 @@
                 <h1 class="page-header">Add an Official</h1>
                 <form class="form-add-official" action="index.php?page=admin&amp;tab=manageofficials" method="post" name="registration_form" role="form">
                     <input type='text' class="form-control" placeholder="Username" name='username' id='username' required >
-                    <input type='text' class="form-control" placeholder="Password" name='password' id='password' required >
+                    <input type='password' class="form-control" placeholder="Password" name='password' id='password' required >
     	            <input type='text' class="form-control" placeholder="Name" name='name' id='name' required >
         			<input type="text" class="form-control" placeholder="Organization" name="organization" id="organization" required>
                     <input type="text" class="form-control" placeholder="Designation" name="designation" id="designation" required>

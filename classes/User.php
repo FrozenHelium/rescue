@@ -198,6 +198,8 @@ class User {
 		}
 	}
 
+    function HandleReport($reportid){
+    }
     function AddUserRaw($username, $password, $usertype)
     {
         $newpass = hash('sha512', $password);
